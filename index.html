@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk Portfolio | Om Prakash</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Three.js for 3D effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <!-- Particles.js for background effects -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/cyberpunk.css">
+</head>
+<body>
+    <!-- Particles background -->
+    <div id="particles-js"></div>
+
+    <!-- Glitch overlay -->
+    <div class="glitch-overlay"></div>
+
+    <!-- Side Navigation -->
+    <nav class="cyberpunk-sidebar">
+        <div class="nav-brand">
+            <div class="logo-container">
+                <div class="cyber-logo">OP</div>
+            </div>
+            <h2 class="glitch" data-text="MENU">MENU</h2>
+        </div>
+        <div class="nav-toggle">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="cyber-link active" data-text="HOME"><span>//</span>HOME</a></li>
+            <li><a href="#about" class="cyber-link" data-text="ABOUT"><span>//</span>ABOUT</a></li>
+            <li><a href="#skills" class="cyber-link" data-text="SKILLS"><span>//</span>SKILLS</a></li>
+            <li><a href="#projects" class="cyber-link" data-text="PROJECTS"><span>//</span>PROJECTS</a></li>
+            <li><a href="#contact" class="cyber-link" data-text="CONTACT"><span>//</span>CONTACT</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <div class="social-icons">
+                <a href="#" class="cyber-icon"><i class="fab fa-github"></i></a>
+                <a href="#" class="cyber-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="cyber-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="cyberpunk-main">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="cyber-grid"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="cyber-glitch-big" data-text="OM PRAKASH">HII i'M OM PRAKASH</h1>
+                    <div class="cyber-box">
+                        <h2 class="cyber-headline">
+                            <span class="cyber-bracket">[</span>
+                            <span id="typewriter" class="typewriter">A Programmer</span>
+                            <span class="cyber-bracket">]</span>
+                        </h2>
+                    </div>
+            </br>
+            <p class="cyber-desc">CREATING DIGITAL REALITIES AND BREAKING THE CODE</p>
+        </br>
+            </br>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="cyber-button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            VIEW PROJECTS
+                        </a>
+                        <a href="#contact" class="cyber-button-outline">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            ESTABLISH CONNECTION
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-3d">
+                    <div id="3d-cube" class="cyber-cube"></div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="cyber-arrow">
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="scroll-text">SCROLL_DOWN</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="section-header">
+            <h2 class="cyber-glitch" data-text="IDENTITY">IDENTITY</h2>
+            <div class="cyber-divider"><span></span></div>
+            </div>
+            <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                <div class="cyber-frame">
+                    <img src="/img/my.png" alt="Profile" width="350px" height="auto">
+                    <div class="corner-tl"></div>
+                    <div class="corner-tr"></div>
+                    <div class="corner-bl"></div>
+                    <div class="corner-br"></div>
+                </div>
+                </div>
+                <div class="about-content">
+                <div class="cyber-terminal">
+                    <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="terminal-title">about.exe</div>
+                    </div>
+                    <div class="terminal-body"></div>
+                    <p class="line"><span class="command">$ whoami</span></p>
+                    <p class="output">I am a passionate developer with expertise in building modern web applications. With a strong foundation in both front-end and back-end technologies, I create seamless digital experiences that are both visually appealing and functionally robust.</p>
+                    
+                    <p class="line"><span class="command">$ cat education.txt</span></p>
+                    <p class="output">🧑‍🎓 Currently pursuing B.Tech (1st Year) at IES College of Technology</p>
+
+                    <p class="line"><span class="command">$ ls certifications/</span></p>
+                    <p class="output">🏆 Java Programming - Great Learning Academy
+    🏆 Computer Networking - Simplilearn SkillUp</p>
+                    
+                    <p class="line"><span class="command">$ cat background.txt</span></p>
+                    <p class="output">My journey in tech began when I was in college where I discovered my passion for creating things that live on the internet. Fast-forward to today, I've had the privilege of working on diverse projects that have honed my skills.</p>
+                    
+                    <p class="line cursor">_</p>
+                    </div>
+                </div>
+                <a href="#" class="cyber-button" download>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    DOWNLOAD CV.exe
+                </a>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="section-header">
+            <h2 class="cyber-glitch" data-text="ABILITIES">ABILITIES</h2>
+            <div class="cyber-divider"><span></span></div>
+            </div>
+            <div class="container">
+            <div class="skills-grid">
+                <div class="skill-category">
+                        <div class="category-header">
+                            <h3 class="cyber-text">PROGRAMMING LANGUAGES</h3>
+                            <div class="cyber-line"></div>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>Python</h4>
+                                    <div class="cyber-bar">
+                                        <div class="cyber-progress" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-java"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>Java</h4>
+                                    <div class="cyber-bar">
+                                        <div class="cyber-progress" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-java"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>C/C++</h4>
+                                    <div class="cyber-bar">
+                                        <div class="cyber-progress" style="width: 50%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <h3 class="cyber-text">LIBRARY</h3>
+                            <div class="cyber-line"></div>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>Numpy</h4>
+                                    <div class="cyber-bar">
+                                        <div class="cyber-progress" style="width: 10%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>Pandas</h4>
+                                    <div class="cyber-bar">
+                                        <div class="cyber-progress" style="width: 10%"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>Metaplotlib</h4>
+                                    <div class="cyber-bar">
+                                        <div class="cyber-progress" style="width: 10%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>      
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <h3 class="cyber-text">FRONTEND</h3>
+                            <div class="cyber-line"></div>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>HTML5</h4>
+                                    <div class="cyber-bar">
+                                        <div class="cyber-progress" style="width: 100%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>CSS</h4>
+                                    <div class="cyber-bar"></div>
+                                        <div class="cyber-progress" style="width:10%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>JavaScript</h4>
+                                    <div class="cyber-bar">
+                                        <div class="cyber-progress" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <h3 class="cyber-text">BACKEND</h3>
+                            <div class="cyber-line"></div>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-node-js"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>Node.js</h4>
+                                    <div class="cyber-bar">
+                                        <div class="cyber-progress" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>SQL</h4>
+                                    <div class="cyber-bar">
+                                        <div class="cyber-progress" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>Flask</h4>
+                                    <div class="cyber-bar">
+                                        <div class="cyber-progress" style="width: 65%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cyber-circuit"></div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="section-header">
+                <h2 class="cyber-glitch" data-text="CREATIONS">CREATIONS</h2>
+                <div class="cyber-divider"><span></span></div>
+            </div>
+            <div class="container">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/img/posth.png" alt="Project one" width="100px" height="auto">
+                            <div class="project-overlay">
+                                <div class="project-tech">
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                    <span>Express</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3 class="cyber-text">PROJECT ONE</h3>
+                            <p>A responsive web application built with React and Node.js</p>
+                            <div class="project-links">
+                                <a href="#" class="cyber-btn-small">
+                                    <i class="fas fa-external-link-alt"></i> LIVE DEMO
+                                </a>
+                                <a href="#" class="cyber-btn-small">
+                                    <i class="fab fa-github"></i> SOURCE
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/img/posth.png" alt="Project Two" width="100px" height="auto">
+                            <div class="project-overlay">
+                                <div class="project-tech">
+                                    <span>React</span>
+                                    <span>MongoDB</span>
+                                    <span>Stripe</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3 class="cyber-text">PROJECT TWO</h3>
+                            <p>An e-commerce platform with payment integration</p>
+                            <div class="project-links">
+                                <a href="#" class="cyber-btn-small">
+                                    <i class="fas fa-external-link-alt"></i> LIVE DEMO
+                                </a>
+                                <a href="#" class="cyber-btn-small">
+                                    <i class="fab fa-github"></i> SOURCE
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/img/posth.png" alt="Project Three" width="100px" height="auto">
+                            <div class="project-overlay">
+                                <div class="project-tech">
+                                    <span>Vue.js</span>
+                                    <span>Firebase</span>
+                                    <span>Tailwind</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3 class="cyber-text">PROJECT THREE</h3>
+                            <p>A social media dashboard with analytics</p>
+                            <div class="project-links">
+                                <a href="#" class="cyber-btn-small">
+                                    <i class="fas fa-external-link-alt"></i> LIVE DEMO
+                                </a>
+                                <a href="#" class="cyber-btn-small">
+                                    <i class="fab fa-github"></i> SOURCE
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-header">
+                <h2 class="cyber-glitch" data-text="CONNECT">CONNECT</h2>
+                <div class="cyber-divider"><span></span></div>
+            </div>
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="cyber-card">
+                            <div class="card-header">
+                                <h3>COMMUNICATION CHANNELS</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h4>EMAIL</h4>
+                                        <p>omprakash908987@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h4>PHONE</h4>
+                                        <p>+1 (91) 773-9998-377</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h4>LOCATION</h4>
+                                        <p>Bhopal,India</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <div class="cyber-form-container">
+                            <div class="form-header">
+                                <h3>SEND_MESSAGE.exe</h3>
+                            </div>
+                            <form class="cyber-form">
+                                <div class="form-group">
+                                    <label for="name">USERNAME</label>
+                                    <input type="text" id="name" class="cyber-input" required>
+                                    <div class="input-border"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">EMAIL_ADDRESS</label>
+                                    <input type="email" id="email" class="cyber-input" required>
+                                    <div class="input-border"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">SUBJECT</label>
+                                    <input type="text" id="subject" class="cyber-input">
+                                    <div class="input-border"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">MESSAGE</label>
+                                    <textarea id="message" class="cyber-input cyber-textarea" required></textarea>
+                                    <div class="input-border"></div>
+                                </div>
+                                <button type="submit" class="cyber-button">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    TRANSMIT
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="cyberpunk-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    <p>&copy; 2023 <span class="highlight">Om Prakash</span>. All systems operational.</p>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="cyber-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="cyber-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="cyber-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-line"></div>
+            <div class="footer-credits">
+                <p>Designed and coded in <span class="highlight">{REALITY.SYS}</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/cyberpunk.js"></script>
+</body>
+</html>
